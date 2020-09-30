@@ -14,6 +14,7 @@ function Blog(props) {
 
   return (
     <div>
+      <h1> Blog </h1>
       {sidebar}
       <hr />
       {content}
@@ -21,9 +22,9 @@ function Blog(props) {
   );
 }
 
-const posts = [
+const POSTS = [
   { id: 1, title: 'Hello World', content: 'Welcome to React' },
   { id: 2, title: 'Introduction', content: 'npx create-react-app appName' }
 ];
 
-export default Blog;
+export { Blog, POSTS };

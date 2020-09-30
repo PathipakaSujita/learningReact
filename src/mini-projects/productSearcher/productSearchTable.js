@@ -26,6 +26,7 @@ class ProductSearchTable extends React.Component {
   render() {
     return (
       <div>
+        <h1> ProductSearchTable </h1>
         <SearchInput
           filterText={this.state.filterText}
           inStockOnly={this.state.inStockOnly}
@@ -65,13 +66,13 @@ class SearchInput extends React.Component {
         <input
           type="text"
           placeholder="Search ...."
-          value={this.props.filterText}
+          value={filterText}
           onChange={this.handleFilterTextChange}
         />
         <p>
           <input
             type="checkbox"
-            checked={this.props.inStockOnly}
+            checked={inStockOnly}
             onChange={this.handleInStockChange}
           />
           {'     '}
@@ -98,7 +99,7 @@ class ProductTable extends React.Component {
         return;
       }
 
-      if (product.category != lastCategory) {
+      if (product.category !== lastCategory) {
         rows.push(
           <ProductCategoryRow
             category={product.category}

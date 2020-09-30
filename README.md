@@ -66,3 +66,17 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### COMPONENTS:
+
+1.  Blog
+2.  Button
+3.  Form
+4.  login Control
+5.  toggle
+6.  warning Control
+
+#### MINI-PROJECTS:
+
+1.  product searcher - Filter products based on search query and based on stock availability.
+2.

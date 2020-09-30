@@ -108,4 +108,17 @@ class DropDown extends React.Component {
   }
 }
 
-export { FormInput, FormText, DropDown };
+class Form extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1> FORM </h1>
+        <FormInput />
+        <FormText />
+        <DropDown />
+      </div>
+    );
+  }
+}
+
+export { Form };

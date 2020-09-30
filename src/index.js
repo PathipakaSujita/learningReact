@@ -1,30 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Toggle2 from './components/toggle.js';
 import Toggle from './components/button.js';
 import LoginControl from './components/loginControl.js';
 import WarningControl from './components/warningControl.js';
-import Blog from './components/blog.js';
-import { FormInput, FormText, DropDown } from './components/form.js';
+import { Blog, POSTS } from './components/blog.js';
+import { Form } from './components/form.js';
 import {
   ProductSearchTable,
-  SearchInput,
-  ProductTable,
-  ProductCategoryRow,
-  ProductRow,
   PRODUCTS
 } from './mini-projects/productSearcher/productSearchTable.js';
+import Game from './mini-projects/ticTacToe/ticTacGame.js';
 import * as serviceWorker from './serviceWorker';
-
-const posts = [
-  { id: 1, title: 'Hello World', content: 'Welcome to React' },
-  { id: 2, title: 'Introduction', content: 'npx create-react-app appName' }
-];
 
 ReactDOM.render(
   <>
-    <ProductSearchTable products={PRODUCTS} />
+    <Game /> <br />
+    <Form /> <br />
+    <Toggle /> <br />
+    <LoginControl /> <br />
+    <ProductSearchTable products={PRODUCTS} /> <br />
+    <WarningControl /> <br />
+    <Blog posts={POSTS} /> <br />
   </>,
   document.getElementById('root')
 );
